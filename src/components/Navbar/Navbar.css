@@ -1,0 +1,92 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #373a36;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  padding: 0 4rem;
+  z-index: 100;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  font-weight: 700;
+  border-bottom: 3px solid #d48166;
+}
+
+.logo {
+  cursor: pointer;
+  height: 80%;
+  max-height: 90px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+    z-index: 100;
+  }
+
+  .menu-icon:hover {
+    color: #d48166;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: -200%;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    max-height: 400px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #e6e2dd;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links.active > a {
+    color: #373a36;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .nav-links.active > a:hover {
+    background-color: #d48166;
+  }
+}
