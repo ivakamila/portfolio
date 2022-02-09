@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="menu-icon" onClick={handleClick}>
         <i className={open ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
-      <div className={`nav-links ${open ? "active" : "nav-links"}`}>
+      <div className={`nav-links ${open ? "active" : ""}`}>
         {NavLinks.map((item, index) => {
           return (
             <a href={`/${item.id}`} onClick={handleClick} key={index}>
