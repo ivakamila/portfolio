@@ -26,10 +26,6 @@
   margin: 0.3em;
 }
 
-.social-icons i:hover {
-  transform: scale(1.07);
-}
-
 .intro-left > h1 {
   font-size: 3rem;
   margin: 0;

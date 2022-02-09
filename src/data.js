@@ -12,7 +12,7 @@ const NavLinks = [
     title: "Resume",
   },
   {
-    id: "#",
+    id: "#projects",
     title: "Projects",
   },
   {

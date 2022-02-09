@@ -1,6 +1,8 @@
 import React from "react";
 import "./Intro.css";
 import myPhoto from "../../assets/personal-photo.png";
+import { BsGithub } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 
 const Intro = () => {
   return (
@@ -8,11 +10,14 @@ const Intro = () => {
       <div className="intro-container">
         <div className="intro-left">
           <div className="social-icons">
-            <a href="https://github.com/ivakamila">
-              <i className="fab fa-github-square"></i>
+            <a href="https://github.com/ivakamila" target="_blank">
+              <BsGithub />
             </a>
-            <a href="https://www.linkedin.com/in/kamila-ivashchenko-76817878/">
-              <i className="fab fa-linkedin"></i>
+            <a
+              href="https://www.linkedin.com/in/kamila-ivashchenko-76817878/"
+              target="_blank"
+            >
+              <BsLinkedin />
             </a>
           </div>
           <h2>Hi there, I'm </h2>

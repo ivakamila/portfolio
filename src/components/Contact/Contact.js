@@ -14,7 +14,7 @@ const Contact = () => {
           <h3>Contact Info</h3>
           <div className="info">
             <i className="fas fa-phone-alt info-icon"></i>
-            <p>+46987987987</p>
+            <p>+46 735 314 668</p>
           </div>
           <div className="info">
             <i className="fas fa-envelope info-icon"></i>

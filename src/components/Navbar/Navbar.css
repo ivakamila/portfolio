@@ -41,7 +41,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 820px) {
   .menu-icon {
     display: block;
     position: absolute;
