@@ -34,7 +34,9 @@ const Projects = () => {
               <a href="https://github.com/ivakamila/ZenHomes" target="_blank">
                 <BsGithub />
               </a>
-              <FaExternalLinkAlt />
+              <a href="https://zenhome.shop" target="_blank">
+                <FaExternalLinkAlt />
+              </a>
             </div>
           </div>
         </div>
@@ -54,7 +56,9 @@ const Projects = () => {
               <a href="https://github.com/ivakamila/portfolio" target="_blank">
                 <BsGithub />
               </a>
-              <FaExternalLinkAlt />
+              <a href="https://ivakamila.com" target="_blank">
+                <FaExternalLinkAlt />
+              </a>
             </div>
           </div>
         </div>
