@@ -1,0 +1,59 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  background-color: $dark-grey;
+  color: $white;
+  position: relative;
+}
+
+.app {
+  width: 100%;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+
+  @media (max-width: $layout-breakpoint-medium) {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.section {
+  padding: 5rem 4rem;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+
+  @media (max-width: $layout-breakpoint-medium) {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.large-container {
+  width: 100%;
+  max-width: 1012px;
+  margin: 0 auto;
+}
+
+.small-container {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+
+  @media (max-width: $layout-breakpoint-medium) {
+    width: 100%;
+  }
+}

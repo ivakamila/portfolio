@@ -1,0 +1,147 @@
+@import "../../variables.scss";
+
+.contact {
+  background-color: $dark-grey;
+  color: $white;
+}
+
+.contact-container {
+  background-color: $beige;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  border: 1px solid $light-grey;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+
+  @media (max-width: $layout-breakpoint-medium) {
+    @include vertical-list;
+  }
+
+  .left {
+    width: 50%;
+    padding: 2rem;
+    border-right: 1px solid $dark-grey;
+
+    @media (max-width: $layout-breakpoint-medium) {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid $dark-grey;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      color: $dark-grey;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .info {
+      width: 100%;
+      padding: 0 1rem;
+      background-color: $orange;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+
+      p {
+        color: $white;
+        font-size: 0.9rem;
+      }
+    }
+
+    .info-icon {
+      background-color: grey;
+      padding: 0.7rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  }
+
+  .right {
+    width: 50%;
+    padding: 2rem;
+
+    @media (max-width: $layout-breakpoint-medium) {
+      width: 100%;
+    }
+
+    .contact-form {
+      width: 100%;
+      @include vertical-list;
+      justify-content: center;
+
+      label {
+        width: 100%;
+        font-size: 1.2rem;
+        color: $dark-grey;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.5rem;
+        outline: none;
+        border: none;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+      }
+
+      textarea {
+        min-height: 100px;
+        resize: vertical;
+      }
+
+      .submit-btn {
+        color: $white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        background-color: $orange;
+        padding: 0.5rem 3rem;
+        cursor: pointer;
+
+        &:hover {
+          color: $white;
+          background-color: $dark-grey;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  // .contact {
+  //   height: 100%;
+  // }
+}
+
+// @media screen and (max-width: 497px) {
+//   .left {
+//     width: 100%;
+//   }
+
+//   .right {
+//     width: 100%;
+//   }
+
+//   .info-icon {
+//     padding: 0.4rem;
+//   }
+
+//   .info > p {
+//     font-size: 0.7rem;
+//   }
+
+//   label {
+//     font-size: 1rem;
+//   }
+// }

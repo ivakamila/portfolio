@@ -1,17 +1,25 @@
+@import "../../variables.scss";
+
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #373a36;
-  border-top: 2px solid #fff;
-  width: 100%;
+  background-color: $dark-grey;
+  border-top: 2px solid $white;
   height: 80px;
-  margin: 0;
   padding: 0 4em;
+
+  @media (max-width: $layout-breakpoint-medium) {
+    padding: 2rem 1.5rem
+  }
+
+  .large-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
 }
 
 .copyright {
-  color: #fff;
+  color: $white;
 }
 
 .footer-links {
@@ -21,7 +29,7 @@
 }
 
 .footer-links a {
-  color: #fff;
+  color: $white;
   font-size: 1.2rem;
   text-decoration: none;
   cursor: pointer;

@@ -1,0 +1,18 @@
+$light-grey: #f0ebf4;
+$beige: #e6e2dd;
+$dark-grey: #373a36;
+$white: #fff;
+$orange: #d48166;
+
+$box-shadow: 0px 3px 3px 3px #474b4f;
+
+
+@mixin vertical-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+$layout-breakpoint-medium: 860px;
+$layout-breakpoint-small: 460px;

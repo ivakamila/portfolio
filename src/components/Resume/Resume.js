@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import data from "../../data";
 import { saveAs } from "file-saver";
 import CV from "../../assets/CV.pdf";
-import "./Resume.css";
+import "./Resume.scss";
 
 const Resume = () => {
   const [toggleState, setToggleState] = useState(0);
@@ -22,9 +22,9 @@ const Resume = () => {
   const { Tabs, Education, Experience, ProgrammingSkills, Interests } = data;
 
   return (
-    <div className="resume" id="resume">
+    <div className="resume section" id="resume">
       <h2 className="title">Resume</h2>
-      <div className="tabs">
+      <div className="tabs large-container">
         <div className="tab-list">
           <ul>
             {Tabs.map((item, index) => {
@@ -83,18 +83,15 @@ const Resume = () => {
             <div className="skills">
               {ProgrammingSkills.map((skill, index) => {
                 return (
-                  <div
+                  <ul
                     className={`content ${getActiveClass(
                       2,
                       "active-content skills"
                     )}`}
                     key={index}
                   >
-                    <div className="skill">
-                      {skill.icon}
-                      <p>{skill.title}</p>
-                    </div>
-                  </div>
+                      <li>{skill}</li>
+                  </ul>
                 );
               })}
             </div>

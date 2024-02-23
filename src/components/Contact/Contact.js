@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Contact.css";
+import "./Contact.scss";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -7,9 +7,9 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   return (
-    <div className="contact" id="contact">
+    <div className="contact section" id="contact">
       <h2 className="title">Contact me</h2>
-      <div className="contact-container">
+      <div className="contact-container small-container">
         <div className="left">
           <h3>Contact Info</h3>
           <div className="info">

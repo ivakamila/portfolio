@@ -1,0 +1,25 @@
+@import "../../variables.scss";
+
+.about-me {
+  background-color: $beige;
+  color: $dark-grey;
+
+  .about-container {
+    height: auto;
+    margin: auto;
+    padding: 3rem 4rem;
+    border: 1px solid $light-grey;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+
+    h2 {
+      @media (max-width: $layout-breakpoint-medium) {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media (max-width: $layout-breakpoint-small) {
+      padding: 2rem;
+    }
+  }
+}

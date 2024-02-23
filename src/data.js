@@ -41,9 +41,29 @@ const Education = [
 const Experience = [
   {
     id: 3,
+    title: "Madi Gras Digital",
+    position: "Frontend Developer",
+    years: "August, 2022 - Present",
+    duties: [
+      "Creating frontend interfaces from Figma designs using Vue.js and Razor Pages",
+      "Developing Umbraco CMS based solutions",
+      "Collaborating with other developers in creating an in-house component library built with Vue 3, Vite, TypeScript and Storybook",
+    ],
+  },
+  {
+    id: 4,
+    title: "Websearch Professional",
+    position: "Frontend Developer",
+    years: "April, 2022 - May, 2022",
+    duties: [
+      "Development of a web application that showcases the performance and impact of a client's business. The application is built using HTML, SCSS, ReactJS. It also uses different animations and ChartJS to display data in a user engaging way.",
+    ],
+  },
+  {
+    id: 5,
     title: "SEO and Affiliate Marketing",
     position: "Self Employed",
-    years: "2014 - Present",
+    years: "2014 - 2022",
     duties: [
       "Running my own business as part of the Amazon's Associate Program",
       "Research of product niches, keywords and competition on Google",
@@ -53,40 +73,19 @@ const Experience = [
       "Worked on on- and off-page SEO",
     ],
   },
-  {
-    id: 4,
-    title: "Teaching",
-    position: "English Teacher",
-    years: "2013 (6 months)",
-    duties: [
-      "Taught English in kindergarten in China",
-      "Prepared teaching and held classes",
-    ],
-  },
 ];
 
 const ProgrammingSkills = [
-  {
-    icon: <i className="fab fa-html5"></i>,
-    title: "HTML",
-    clr: "#e60000",
-  },
-  {
-    icon: <i className="fab fa-css3-alt"></i>,
-    title: "CSS",
-    clr: "#1d65aa",
-  },
-  {
-    icon: <i className="fab fa-js-square"></i>,
-    title: "JavaScript",
-    clr: "#f2ec00",
-  },
-  {
-    icon: <i className="fab fa-react"></i>,
-    title: "React.js",
-    clr: "#00dcff",
-  },
-];
+  "Vue.js",
+  "Umbraco",
+  "Razor Pages",
+  "Typescipt",
+  "React.js",
+  "GrahpQL",
+  "HTML & SCSS",
+  "Bootstrap",
+  "Vitest"
+]
 
 const Interests = [
   {
@@ -107,7 +106,7 @@ const Interests = [
   },
   {
     icon: <i className="fas fa-running"></i>,
-    title: "Working Out",
+    title: "Running",
   },
 ];
 
