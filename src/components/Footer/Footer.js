@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Footer.scss";
 
 const Footer = () => {
+  const [url, setUrl] = useState(null)
+
+  useEffect(() => {
+    setUrl(window.location.pathname)
+  }, [])
+
   return (
     <footer className="footer">
       <div className="large-container">
@@ -11,19 +17,19 @@ const Footer = () => {
         <div>
           <ul className="footer-links">
             <li>
-              <a href="#top">Home</a>
+              <a href={`${url}#top`}>Home</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href={`${url}#about`}>About</a>
             </li>
             <li>
-              <a href="#resume">Resume</a>
+              <a href={`${url}#resume`}>Resume</a>
             </li>
             <li>
-              <a href="projects">Projects</a>
+              <a href={`${url}#projects`}>Projects</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href={`${url}#contact`}>Contact</a>
             </li>
           </ul>
         </div>

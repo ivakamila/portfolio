@@ -1,20 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import data from "../../data";
 import "./Navbar.scss";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [url, setUrl] = useState(null)
   const { NavLinks } = data;
 
   const handleClick = () => {
     setOpen(!open);
+    setUrl(window.location.pathname)
   };
 
   return (
     <nav className="navbar">
       <div className="large-container">
         <div className="logo">
-          <a href="/#">
+          <a href="/">
             KI
           </a>
         </div>
@@ -24,7 +26,7 @@ const Navbar = () => {
         <div className={`nav-links ${open ? "active" : ""}`}>
           {NavLinks.map((item, index) => {
             return (
-              <a href={`/${item.id}`} onClick={handleClick} key={index}>
+              <a href={`${url}${item.id}`} onClick={handleClick} key={index}>
                 {item.title}
               </a>
             );
