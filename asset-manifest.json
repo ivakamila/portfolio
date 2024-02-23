@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d5fc9cad.css",
-    "main.js": "/portfolio/static/js/main.36956c5a.js",
+    "main.js": "/portfolio/static/js/main.8c423186.js",
     "static/media/buildup-nepal.png": "/portfolio/static/media/buildup-nepal.e74bf787dd114d2cd726.png",
     "static/media/zenhome.png": "/portfolio/static/media/zenhome.06c20a8ac9889a3bd607.png",
-    "static/media/portfolio.png": "/portfolio/static/media/portfolio.abde202001ece2bb5818.png",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.567bd3843784d8117996.png",
     "static/media/Kamila Ivashchenko CV.pdf": "/portfolio/static/media/Kamila Ivashchenko CV.c4ec3ba2f6f3c866c6e4.pdf",
     "index.html": "/portfolio/index.html",
     "main.d5fc9cad.css.map": "/portfolio/static/css/main.d5fc9cad.css.map",
-    "main.36956c5a.js.map": "/portfolio/static/js/main.36956c5a.js.map"
+    "main.8c423186.js.map": "/portfolio/static/js/main.8c423186.js.map"
   },
   "entrypoints": [
     "static/css/main.d5fc9cad.css",
-    "static/js/main.36956c5a.js"
+    "static/js/main.8c423186.js"
   ]
 }
