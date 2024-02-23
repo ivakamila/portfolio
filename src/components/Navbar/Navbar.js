@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="large-container">
         <div className="logo">
-          <a href="/">
+          <a href={`${url}#`} onClick={handleClick}>
             KI
           </a>
         </div>
