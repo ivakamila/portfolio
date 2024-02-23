@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import data from "../../data";
 import { saveAs } from "file-saver";
-import CV from "../../assets/CV.pdf";
+import CV from "../../assets/Kamila Ivashchenko CV.pdf";
 import "./Resume.scss";
 
 const Resume = () => {
